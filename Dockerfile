@@ -33,6 +33,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yy --no-install-recommends \
   python-pip \
   python-software-properties \
   sqlite3 \
+  tmux \
   vim \
   wget \
   zlib1g-dev
@@ -78,6 +79,8 @@ RUN pip install flootty
 # start the Floobits tools
 USER dev
 COPY .floorc.json /home/dev/.floorc.json
+# HACK: change this timestamp to let 'docker build' recognize changes if start.sh changes
+RUN echo 3456789012
 COPY start.sh /home/dev/start.sh
 WORKDIR /home/dev/workdir/foo
 CMD /home/dev/start.sh
