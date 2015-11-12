@@ -1,0 +1,6 @@
+.DS_Store
+.floorc.json
+*.log
+node_modules
+dist
+.env
