@@ -9,18 +9,20 @@ First, you'll need to create an account at [Floobits][floobits]. Then, you'll ne
 
 ### Running Locally
 
+Edit `docker-compose.yml` to match your Floobits username and desired workspace name, then:
+
 ```bash
-$ docker build -t learnersguild/cloud-collab-docker .
-$ docker run -e "FLOOBITS_USER=<your Floobits username>"" "-e "FLOOBITS_WORKSPACE=<any string>" -dt learnersguild/cloud-collab-docker
+$ docker-compose up
 ```
 
 Then visit `https://floobits.com/<FLOOBITS_USER>/<FLOOBITS_WORKSPACE>` in your browser.
 
 ### Running in the Cloud (via Tutum)
 
-First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'll need to ensure that your account is hooked up to [Digital Ocean][digitalocean], [AWS][aws], or some other cloud provider. At that point, you should be able to deploy using this button:
+First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'll need to ensure that your account is hooked up to [Digital Ocean][digitalocean], [AWS][aws], or some other cloud provider. At that point, you should be able to deploy using the button below. You'll have to edit the "stack file" on Tutum with the correct environment to atch your Floobits.
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
+
 
 
 ## Notes

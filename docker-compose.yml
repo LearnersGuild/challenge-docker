@@ -1,3 +1,6 @@
 cloud-collab:
   image: 'learnersguild/cloud-collab-docker:latest'
   tty: true
+  environment:
+    FLOOBITS_USER: <YOUR FLOOBITS USERNAME>
+    FLOOBITS_WORKSPACE: <YOUR FLOOBITS WORKSPACE>
