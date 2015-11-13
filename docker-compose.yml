@@ -1,0 +1,3 @@
+cloud-collab:
+  image: 'learnersguild/cloud-collab-docker:latest'
+  tty: true
