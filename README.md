@@ -45,6 +45,7 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 ## Notes
 
 - This image installs includes workable Ruby and Node.js environments. It would probably be better to break this into multiple images.
+- See also: [cloud-collab-docker on Docker Hub][cloud-collab-docker-dockerhub]
 
 
 <!-- references -->
@@ -54,3 +55,4 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 [digitalocean]:https://www.digitalocean.com/
 [aws]:https://aws.amazon.com/
 [tutum-deploy]:https://github.com/kelonye/node-tutum-deploy
+[cloud-collab-docker-dockerhub]:https://hub.docker.com/r/learnersguild/cloud-collab-docker/
