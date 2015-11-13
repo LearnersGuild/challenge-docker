@@ -20,10 +20,22 @@ Then visit `https://floobits.com/<FLOOBITS_USER>/<FLOOBITS_WORKSPACE>` in your b
 
 ### Running in the Cloud (via Tutum)
 
+
+#### Quick and Dirty
+
 First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'll need to ensure that your account is hooked up to [Digital Ocean][digitalocean], [AWS][aws], or some other cloud provider. At that point, you should be able to deploy using the button below. You'll have to edit the "stack file" on Tutum with the correct environment to atch your Floobits.
 
 [![Deploy to Tutum](https://s.tutum.co/deploy-to-tutum.svg)](https://dashboard.tutum.co/stack/deploy/)
 
+#### Recommended Approach
+
+1. Install [tutum-deploy][tutum-deploy]: `npm install -g tutum-deploy`
+2. Set your `TUTUM_USER` and `TUTUM_APIKEY` environment variables.
+3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file, but with `clusters` and `services` sections).
+4. Deploy:
+    $ td build
+    $ td push
+    $ td up
 
 
 ## Notes
@@ -37,3 +49,4 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 [tutum]:https://tutum.co/
 [digitalocean]:https://www.digitalocean.com/
 [aws]:https://aws.amazon.com/
+[tutum-deploy]:https://github.com/kelonye/node-tutum-deploy
