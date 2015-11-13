@@ -2,5 +2,6 @@ cloud-collab:
   image: 'learnersguild/cloud-collab-docker:latest'
   tty: true
   environment:
+    # DON'T COMMIT YOUR CHANGES HERE -- these are in here for ease-of-deployment using Tutum!
     FLOOBITS_USER: <YOUR FLOOBITS USERNAME>
     FLOOBITS_WORKSPACE: <YOUR FLOOBITS WORKSPACE>

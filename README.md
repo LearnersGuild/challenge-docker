@@ -10,7 +10,7 @@ First, you'll need to create an account at [Floobits][floobits]. Then, you'll ne
 
 ### Running Locally
 
-Edit `docker-compose.yml` to match your Floobits username and desired workspace name, then:
+Edit `docker-compose.yml` (**don't commit your changes!!!**) to match your Floobits username and desired workspace name, then:
 
 ```bash
 $ docker-compose up
