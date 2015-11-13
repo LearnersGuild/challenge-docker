@@ -1,7 +1,8 @@
-# Cloud Collaboration [Docker][docker] Image (via [Floobits][floobits] and [Tutum][tutum])
+# cloud-collab-docker
 
-This is not yet ready for public consumption. For one thing, it assumes that there is a `.floorc.json` file in the current folder (which there is not -- it can be copied from each user's home folder for now). We'll need to figure out a way to securely build this image in the long term.
+[Docker][docker] image to support collaboration (e.g., pair programming) in the cloud using [Floobits][floobits].
 
+The easiest way to get up and running is probably [Tutum][tutum] (see below).
 
 ## Getting Started
 
