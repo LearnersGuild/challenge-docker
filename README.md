@@ -34,6 +34,7 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 2. Set your `TUTUM_USER` and `TUTUM_APIKEY` environment variables.
 3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file, but with `clusters` and `services` sections).
 4. Deploy:
+
     ```bash
     $ td build
     $ td push
