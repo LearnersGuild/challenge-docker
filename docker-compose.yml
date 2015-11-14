@@ -1,5 +1,5 @@
 cloud-collab:
-  image: 'learnersguild/cloud-collab-docker:latest'
+  image: learnersguild/cloud-collab-docker
   tty: true
   environment:
     # DON'T COMMIT YOUR CHANGES HERE -- these are in here for ease-of-deployment using Tutum!
