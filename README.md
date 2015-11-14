@@ -6,7 +6,9 @@ The easiest way to get up and running is probably [Tutum][tutum] (see below).
 
 ## Getting Started
 
-First, you'll need to create an account at [Floobits][floobits]. Then, you'll need to go to the settings tab within the Floobits site and grab a copy of your `.floorc.json` file and copy it to this folder. Don't worry, it's ignored via `.gitignore`.
+First, you'll need to create an account at [Floobits][floobits]. Then, you'll need to go to the settings tab within the Floobits site and make a note of your `api_key`, `secret`, and `username` contained within your `.floorc.json` file. In addition, you'll need to decide on a Floobits workspace URL that you want to use, typically of the form:
+
+`https://floobits.com/<USER_OR_ORG_NAME>/<WORKSPACE_NAME>`
 
 ### Running Locally
 
@@ -16,7 +18,7 @@ Edit `docker-compose.yml` (**don't commit your changes!!!**) to match your Floob
 $ docker-compose up
 ```
 
-Then visit `https://floobits.com/<FLOOBITS_USER>/<FLOOBITS_WORKSPACE>` in your browser.
+Then visit `https://floobits.com/<USER_OR_ORG_NAME>/<WORKSPACE_NAME>` in your browser.
 
 ### Running in the Cloud (via Tutum)
 
@@ -32,12 +34,10 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 
 1. Install [tutum-deploy][tutum-deploy]: `npm install -g tutum-deploy`
 2. Set your `TUTUM_USER` and `TUTUM_APIKEY` environment variables.
-3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file, but with `clusters` and `services` sections).
+3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file, but with `clusters` and `services` sections). Fill in the environment section as necessary.
 4. Deploy:
 
     ```bash
-    $ td build
-    $ td push
     $ td up
     ```
 
@@ -48,6 +48,11 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 - See also: [cloud-collab-docker on Docker Hub][cloud-collab-docker-dockerhub]
 
 
+## License
+
+[ISC][isc-license]
+
+
 <!-- references -->
 [docker]:https://www.docker.com/
 [floobits]:https://floobits.com/
@@ -56,3 +61,4 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 [aws]:https://aws.amazon.com/
 [tutum-deploy]:https://github.com/kelonye/node-tutum-deploy
 [cloud-collab-docker-dockerhub]:https://hub.docker.com/r/learnersguild/cloud-collab-docker/
+[isc-license]:http://choosealicense.com/licenses/isc/
