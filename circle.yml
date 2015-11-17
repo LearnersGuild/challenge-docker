@@ -9,7 +9,7 @@ dependencies:
 
 test:
   override:
-    - docker run -e "FLOOBITS_API_KEY=user_jy5pd5z1ty" -e "FLOOBITS_SECRET=bc3uy35u6jxkpp7ulricxid46" -e "FLOOBITS_USERNAME=learnersguild" -e "FLOOBITS_WORKSPACE_URL=https://floobits.com/learnersguild/ccd-circle-ci" -dt learnersguild/cloud-collab-docker; sleep 10
+    - docker run -e "FLOOBITS_API_KEY=user_jy5pd5z1ty" -e "FLOOBITS_SECRET=bc3uy35u6jxkpp7ulricxid46" -e "FLOOBITS_USERNAME=flootest" -e "FLOOBITS_WORKSPACE_URL=https://floobits.com/learnersguild/ccd-circle-ci" -dt learnersguild/cloud-collab-docker; sleep 10
 
 deployment:
   hub:
