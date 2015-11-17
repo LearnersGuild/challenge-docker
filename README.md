@@ -34,7 +34,7 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 
 1. Install the [Tutum CLI][tutum-cli]: `brew install tutum`
 2. Set your `TUTUM_USER` and `TUTUM_APIKEY` environment variables.
-3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file, but with `clusters` and `services` sections). Fill in the environment section as necessary.
+3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file.
 4. Deploy:
 
     ```bash
