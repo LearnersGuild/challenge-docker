@@ -32,13 +32,13 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 
 #### Recommended Approach
 
-1. Install [tutum-deploy][tutum-deploy]: `npm install -g tutum-deploy`
+1. Install the [Tutum CLI][tutum-cli]: `brew install tutum`
 2. Set your `TUTUM_USER` and `TUTUM_APIKEY` environment variables.
 3. Create a `tutum.yaml` file (based on the `docker-compose.yaml` file, but with `clusters` and `services` sections). Fill in the environment section as necessary.
 4. Deploy:
 
     ```bash
-    $ td up
+    $ tutum up -f tutum.yaml
     ```
 
 
@@ -59,6 +59,6 @@ First, you'll need to create a [Tutum][tutum] account via [Docker][docker]. You'
 [tutum]:https://tutum.co/
 [digitalocean]:https://www.digitalocean.com/
 [aws]:https://aws.amazon.com/
-[tutum-deploy]:https://github.com/kelonye/node-tutum-deploy
+[tutum-cli]:https://github.com/tutumcloud/cli
 [cloud-collab-docker-dockerhub]:https://hub.docker.com/r/learnersguild/cloud-collab-docker/
 [isc-license]:http://choosealicense.com/licenses/isc/
