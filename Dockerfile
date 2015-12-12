@@ -52,7 +52,7 @@ WORKDIR $HOME
 
 # set up nvm, node.js and npm
 ENV NVM_DIR $HOME/.nvm
-ENV NODE_VERSION 4.2.2
+ENV NODE_VERSION 4.2.3
 RUN git clone https://github.com/creationix/nvm.git $NVM_DIR && \
     cd $NVM_DIR && \
     git checkout `git describe --abbrev=0 --tags`
